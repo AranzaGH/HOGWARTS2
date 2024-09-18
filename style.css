@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* CSS Document */
+*{padding: 0; margin:0;}
+
+
+body{ 
+background-image: url("../img/background.jpg");
+background-repeat: no-repeat; background-size: cover; background-attachment: fixed;
+font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+cursor: url("../img/cursor.png"), auto;
+}
+
+.wrapper{
+	background-color: rgba(4,47,122,0.80);
+	width: 1000px; height: auto;
+	text-align: center; padding: 30px;
+	box-sizing: border-box;
+	margin-left: auto; margin-right: auto;
+}
+
+.footer{
+	background-color: black; width: 1000px; height: 60px;
+	color: aliceblue;
+	line-height: 60px;
+	margin-left: auto; margin-right: auto;
+	text-align: center;
+}
+
+
+.menu{
+	background-color: black; width: 1000px; height: 200px;
+	color: aliceblue; margin-left: auto; margin-right: auto; text-align: center;
+}
+.menu ul{
+	list-style-type: none;
+	
+}
+.menu li{
+	width: 200px; float: left; line-height: 100px
+}
+.section{
+	background-color: black; width: 700px;
+	padding: 70px;
+	margin: 50px auto;
+	color: aliceblue;
+	
+}
+.section img {height: 200px; width: auto;margin: 30px;
+}
+.section p {text-align: justify; font-family:"Grey Qo", cursive; 
+	font-size: 30px;
+}
+h2{color:#ad8350;
+	font-family: harryp;
+	font-size: 50px
+}
+a {text-decoration: none;color: aliceblue;
+}
+a:hover{color:#ad8350; font-family: harryp
+}
+.boton{
+	position: fixed; right:50px; top: 200px;
+}
+.uno{
+	position:absolute; left:50px; bottom: 100px;
+}
+
+/*TRANSFORMACIONES* hay 5 tipos*/
+.uno:hover{
+	transform: translate(-100px,-50px);
+	transition: ease-out 5s; 
+}
+.dos{
+	position:absolute; right:120px; bottom: -300px;
+}
+.dos:hover{
+	transform: translate(-100px,-50px);
+	transition: ease-out 3s; 
+}
+.tres{
+	position:absolute; left:50px; bottom: -800px;
+}
+.tres:hover{
+	transform: scale(0.5);
+	transition: ease-out 5s; 
+}
+.cuatro{
+	position:relative; right:0px; bottom: 20px;
+}
+.cuatro:hover{
+	transform: scaleX(-1);
+	transition: ease-out 5s; 
+}
+.cinco{
+	position:relative; right:0px; bottom: 20px;
+}
+.cinco:hover{
+	transform: rotate(360deg);
+	transition: ease-in 2s; 
+}
+
+/*font face permite colocar fuentes descargadas, font-family asigna un nombre para usarlo después*/
+@font-face { src: url("../scr/HARRYP__.TTF"); font-family: harryp; }
+/*Posición relativa sigue el flujo de la página*/
+/*posición fija no se mueje aunque la página se mueva, sale del flujo de la página, se posiciona a partir de la ventana del navegador*/
+/*posicion absoluta, tambien sale de la página y se posiciona a partir de la ventana del navegador, la diferencia es que el scroll la afecta*/
+/*la transición linear no tiene flexibilización, es decir, la velocidad es constante*
+ease-in: inicia la transformación lentamente ty termina a toda velocidad*
+ease-out: visceversa*
+ease-in-out: comienza lentamente se hace rapida a la mitad y vuelve a terminar lento
+Las transformaCIONES DE rotate y skew se manejan en grados mientras que Translate en px*/
+
+
+/*TAREAAA:
+IMAGENES. FUENTE, FAVICON, CURSOR, HOME, */
